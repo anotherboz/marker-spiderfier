@@ -1,0 +1,58 @@
+{
+  "$schema": "/node_modules/ng-packagr/package.schema.json",
+  "name": "agm-spiderfier1",
+  "version": "1.0.5",
+  "description": "Angular Google Maps (AGM) extension for google maps marker spiderfier library",
+  "keywords": [
+    "angular-google-maps",
+    "angular",
+    "google-maps",
+    "agm",
+    "spiderfier",
+    "marker"
+  ],
+  "scripts": {
+    "clean": "rimraf dist '**/*.ngfactory.ts' && mkdirp dist",
+    "prebuild": "yarn clean",
+    "build": "yarn lint && yarn build:all",
+    "build:all": "ng-packagr -p package.json",
+    "lint": "tslint --project tsconfig.json -c tslint.json 'directive/**/*.ts' 'service/**/*.ts'",
+    "test": "jest",
+    "test:watch": "jest --watchAll"
+  },
+  "author": "Sebastian Holstein <info@sebastian-holstein.de>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SebastianM/angular-google-maps/issues"
+  },
+  "homepage": "https://angular-maps.com",
+  "peerDependencies": {
+    "@angular/core": "^7.0.0 || ^8.0.0 || ^9.0.0",
+    "@agm/core": "^1.1.0"
+  },
+  "whitelistedNonPeerDependencies": [
+    "."
+  ],
+  "ngPackage": {
+    "lib": {
+      "entryFile": "./index.ts",
+      "umdId": "ngmaps.marker-spiderfier",
+      "umdModuleIds": {
+        "@agm/core": "ngmaps.core"
+      }
+    },
+    "dest": "./dist/marker-spiderfier"
+  },
+  "devDependencies": {
+    "@angular/compiler": "^8.2.14",
+    "@angular/compiler-cli": "^8.2.14",
+    "@angular/core": "^8.2.14",
+    "codelyzer": "^5.2.0",
+    "jest": "^24.9.0",
+    "ng-packagr": "^5.7.1",
+    "ts-overlapping-marker-spiderfier": "^1.0.3",
+    "tslint": "^5.20.1",
+    "typescript": "^3.5.3",
+    "yarn": "^1.19.2"
+  }
+}

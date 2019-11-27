@@ -1,0 +1,32 @@
+{
+    "compilerOptions": {
+        "module": "es2015",
+        "target": "esnext",
+        "noImplicitAny": true,
+        "experimentalDecorators": true,
+        "emitDecoratorMetadata": true,
+        "outDir": ".tmp/esm",
+        "baseUrl": ".",
+        "sourceMap": true,
+        "removeComments": false,
+        "moduleResolution": "node",
+        "declaration": true,
+        "allowSyntheticDefaultImports": true,
+        "lib": [
+            "es2015",
+            "dom",
+            "esnext"
+        ],
+        "types": [
+            "jest"
+        ]
+    },
+    "angularCompilerOptions": {
+        "genDir": ".tmp",
+        "debug": false,
+        "skipMetadataEmit": false
+    },
+    "exclude": [
+        ".tmp"
+    ]
+}
