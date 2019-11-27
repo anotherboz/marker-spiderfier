@@ -28,7 +28,8 @@
   "homepage": "https://angular-maps.com",
   "peerDependencies": {
     "@angular/core": "^7.0.0 || ^8.0.0 || ^9.0.0",
-    "@agm/core": "^1.1.0"
+    "@agm/core": "^1.1.0",
+    "ts-overlapping-marker-spiderfier": "^1.0.3"
   },
   "whitelistedNonPeerDependencies": [
     "."
@@ -47,11 +48,9 @@
     "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/core": "^8.2.14",
-    "@agm/core": "^1.1.0",
     "codelyzer": "^5.2.0",
     "jest": "^24.9.0",
     "ng-packagr": "^5.7.1",
-    "ts-overlapping-marker-spiderfier": "^1.0.3",
     "tslint": "^5.20.1",
     "typescript": "^3.5.3",
     "yarn": "^1.19.2"
