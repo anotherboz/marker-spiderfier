@@ -1,7 +1,7 @@
 {
   "$schema": "/node_modules/ng-packagr/package.schema.json",
-  "name": "agm-spiderfier1",
-  "version": "1.0.5",
+  "name": "agm-spiderfier",
+  "version": "1.0.0",
   "description": "Angular Google Maps (AGM) extension for google maps marker spiderfier library",
   "keywords": [
     "angular-google-maps",
@@ -47,6 +47,7 @@
     "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "^8.2.14",
     "@angular/core": "^8.2.14",
+    "@agm/core": "^1.1.0",
     "codelyzer": "^5.2.0",
     "jest": "^24.9.0",
     "ng-packagr": "^5.7.1",
