@@ -47,7 +47,7 @@
   "devDependencies": {
     "@angular/compiler": "^8.2.14",
     "@angular/compiler-cli": "^8.2.14",
-    "@angular/core": "^8.2.14",
+    "@angular/core": "^11.0.5",
     "codelyzer": "^5.2.0",
     "jest": "^24.9.0",
     "ng-packagr": "^5.7.1",
